@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<entity
+  xmlns="http://guidewire.com/datamodel"
+  exportable="true"
+  platform="false"
+  table="Policy"
+  entity="Policy"
+  type="retireable">
+
+  <column
+	name="PolicyNbr"
+	type="varchar">
+		<columnParam name="size" value="30"/>
+  </column>
+
+  <column
+	name="PrimaryInsuredPerson"
+	type="varchar">
+		<columnParam name="size" value="30"/>
+  </column>
+
+
+  <column
+    desc="Effective Date"
+    name="EffDate"
+    type="datetime"/>
+
+  <column
+    desc="Expiration Date"
+    name="ExpDate"
+    type="datetime"/>
+
+
+  <!--ARRAYS-->
+  <array
+	arrayentity="PolicyPerson"
+	name="Drivers"/>
+  <array
+    arrayentity="Vehicle"
+    name="Vehicles"/>
+  <array
+	arrayentity="Coverage"
+	name="Coverages"/>
+
+</entity>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<typelist
+  xmlns="http://guidewire.com/typelists"
+  desc="CoverageType"
+  name="CoverageType"
+  tableName="CoverageType">
+  <typecode
+    code="COMP"
+    desc="Comprehensive"
+    name="Comprehensive"/>
+  <typecode
+    code="LIA"
+    desc="Liability"
+    name="Liability"/>
+  <typecode
+    code="BOD"
+    desc="Bodily Injury"
+    name="Bodily Injury"/>
+</typelist>

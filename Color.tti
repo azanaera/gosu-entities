@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<typelist
+  xmlns="http://guidewire.com/typelists"
+  desc="Color"
+  name="Color"
+  tableName="Color">
+  <typecode
+    code="RED"
+    desc="Red"
+    name="Red"/>
+  <typecode
+    code="BLUE"
+    desc="Blue"
+    name="Blue"/>
+  <typecode
+    code="BLACK"
+    desc="Black"
+    name="Black"/>
+  <typecode
+    code="GREEN"
+    desc="Green"
+    name="Green"/>
+  <typecode
+    code="YELLOW"
+    desc="Yellow"
+    name="Yellow"/>
+</typelist>

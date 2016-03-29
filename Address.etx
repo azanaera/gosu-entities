@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<extension
+  xmlns="http://guidewire.com/datamodel"
+  entityName="Address">
+  <dependentfields>
+    <dependentkey
+      typekey="State">
+      <include
+        code="CA"/>
+      <include
+        code="AZ"/>
+    </dependentkey>
+    <column
+      desc="test for type dependent field"
+      name="QATypedependent"
+      type="varchar">
+      <columnParam
+        name="size"
+        value="60"/>
+    </column>
+  </dependentfields>
+</extension>

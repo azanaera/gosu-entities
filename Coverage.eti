@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<entity
+  xmlns="http://guidewire.com/datamodel"
+  exportable="true"
+  platform="false"
+  table="Coverage"
+  entity="Coverage"
+  type="retireable">
+
+   <typekey
+    desc="The Coverage Type"
+    name="InsuranceCoverageType"
+    typelist="CoverageType"/>
+  <column
+  	desc="Price of the Coverage"
+  	name="Price"
+  	type="decimal">
+  		<columnParam name="precision" value="20"/>
+  		<columnParam name="scale" value="2"/>
+  </column>
+  <!--single entity -->
+  <foreignkey
+	fkentity="Vehicle"
+	name="CoveredVehicle"/>
+ 
+  <!-- foreign key to policy entity-->
+  <foreignkey
+	name="Coverage"
+	fkentity="Policy"/>
+</entity>

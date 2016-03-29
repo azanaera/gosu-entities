@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<entity
+  xmlns="http://guidewire.com/datamodel"
+  exportable="true"
+  platform="false"
+  table="CoveragePrice"
+  entity="CoveragePrice"
+  final="true"
+  type="retireable">
+
+
+  <typekey
+    desc="The Coverage Type"
+    name="CoverageType"
+    typelist="CoverageType"/>
+
+  <column
+  	desc="Price of the Coverage"
+  	name="Price"
+  	type="decimal">
+  		<columnParam name="precision" value="20"/>
+  		<columnParam name="scale" value="2"/>
+  </column>
+
+
+  <!-- foreign key to HashMap<CoverageType,Double> in PolicyPriceQuote entity-->
+  <foreignkey
+	name="PriceBreakdown"
+	columnName="PriceBreakdown"
+	fkentity="PolicyPriceQuote"/>
+
+</entity>

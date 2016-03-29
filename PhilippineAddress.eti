@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<entity
+  xmlns="http://guidewire.com/datamodel"
+  exportable="true"
+  platform="false"
+  table="PhilippineAddress"
+  entity="PhilippineAddress"
+  type="retireable">
+
+  <column 
+	desc="The Street"
+	name="StreetExt"
+	type="varchar">
+		<columnParam name="size" value="30"/>
+  </column>
+
+  <column 
+	desc="The Municipal City"
+	name="MunicipalityExt"
+	type="varchar">
+		<columnParam name="size" value="30"/>
+  </column>
+
+  <column 
+	desc="The Province"
+	name="ProvinceExt"
+	type="varchar">
+		<columnParam name="size" value="30"/>
+  </column>
+
+  <column 
+	desc="The Country"
+	name="CountryExt"
+	type="varchar">
+		<columnParam name="size" value="30"/>
+  </column>
+
+  <column 
+	desc="The Street"
+	name="ZipExt"
+	type="integer"/>
+
+</entity>
